@@ -156,10 +156,13 @@ void listenForEthernetClients() {
     
     
 TwoParam(myString);
-outputpin=functionval;
+outputpin=firstValue.toInt();
+    Serial.println("Pin Triggered: "+firstValue);
   digitalWrite(outputpin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);              // wait for a second
+  delay(1500);              // wait for a second
   digitalWrite(outputpin, LOW);    // turn the LED off by making the voltage LOW
+  
+    Serial.println("Pin Off: "+firstValue);
 
 
   }
